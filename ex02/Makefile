@@ -1,13 +1,10 @@
 
-NAME = horde
+NAME = brain
 
 CC = c++
 FLAGS = -g3 -Wall -Werror -Wextra -std=c++98
 
-INCLUDE = includes
-SRC =	src/main.cpp \
-		src/Zombie.cpp\
-		src/zombieHorde.cpp
+SRC =	src/main.cpp
 OBJS = $(SRC:.cpp=.o)
 
 RM = rm -f
@@ -15,11 +12,11 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(FLAGS) -I$(INCLUDE) -o $(NAME) $(OBJS)
+	@$(CC) $(FLAGS) -o $(NAME) $(OBJS)
 
 src/%.o: src/%.cpp
 	@echo "\033[1;32mCompiling	->	$<\033[0m"
-	@$(CC) $(FLAGS) -I$(INCLUDE) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
 run: all
 	@valgrind ./$(NAME)
