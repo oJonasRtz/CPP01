@@ -1,13 +1,13 @@
 
-NAME = phonebook
+NAME = zombieHorde
 
 CC = c++
 FLAGS = -g3 -Wall -Werror -Wextra -std=c++98
 
 INCLUDE = includes
 SRC =	src/main.cpp \
-		src/Contact.cpp \
-		src/PhoneBook.cpp
+		src/Zombie.cpp\
+		src/zombieHorde.cpp
 OBJS = $(SRC:.cpp=.o)
 
 RM = rm -f
