@@ -16,9 +16,9 @@ int	main(void)
 	/*
 		Addresses
 	*/
-	std::cout << GREEN << std::string(40, '-') << std::endl;
+	std::cout << GREEN << std::string(40, '-') << "\n";
 	std::cout << "\t\tAddress\n";
-	std::cout << std::string(40, '-') << RESET << std::endl;
+	std::cout << std::string(40, '-') << RESET << "\n";
 
 	std::cout << ORANGE "Brain:\t\t" RESET << &brain << "\n";
 	std::cout << ORANGE "Pointer:\t" RESET << ptr << "\n";
@@ -27,9 +27,9 @@ int	main(void)
 	/*
 		Values
 	*/
-	std::cout << GREEN << std::string(40, '-') << std::endl;
+	std::cout << GREEN << std::string(40, '-') << "\n";
 	std::cout << "\t\tValue\n";
-	std::cout << std::string(40, '-') << RESET << std::endl;
+	std::cout << std::string(40, '-') << RESET << "\n";
 
 	std::cout << ORANGE "Brain:\t\t" RESET << brain << "\n";
 	std::cout << ORANGE "Pointer:\t" RESET << *ptr << "\n";
