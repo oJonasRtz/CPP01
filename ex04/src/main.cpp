@@ -2,7 +2,7 @@
 
 static int	input_error(void)
 {
-	std::cerr << BRIGHT_RED "Error: invalid input.\n" RESET;
+	std::cout << BRIGHT_RED "Error: invalid input.\n" RESET;
 	std::cout << ORANGE "How to use: ./replace <filename> <S1> <S2>\n" RESET;
 	return (0);
 }

@@ -25,7 +25,7 @@ static int	open_file(const std::string &name, std::ifstream &file)
 	file.open(name.c_str());
 	isOpen = file.is_open();
 	if (!isOpen)
-		std::cerr << BRIGHT_RED "Error: couldn't open the file " << name << "\n" RESET;
+		std::cout << BRIGHT_RED "Error: couldn't open the file " << name << "\n" RESET;
 	return (isOpen);
 }
 
@@ -38,7 +38,7 @@ static int	make_replace(const std::string &name, std::ofstream &dest)
 	dest.open(new_name.c_str());
 	isOpen = dest.is_open();
 	if (!isOpen)
-		std::cerr << BRIGHT_RED "Error: couldn't  create " << new_name << "\n" RESET;
+		std::cout << BRIGHT_RED "Error: couldn't  create " << new_name << "\n" RESET;
 	return (isOpen);
 }
 
